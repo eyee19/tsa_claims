@@ -1,18 +1,21 @@
 #TSA Claims Project
 getwd()
 setwd("C:/Users/Everett/Desktop/R/tsa_project")
-dat <- read.csv("tsa_claims_cleaned.csv") #removed case ID, date received and incident date columns
+dat <- read.csv("tsa_claims.csv")
 names(dat)
-summary(dat)
 
-summary(dat$Status)
+dat[dat==""] <- NA #replacing blank cells with NA value
+dat2 <- na.omit(dat) #removing any rows with NA values
 
-barplot(table(dat$Status), ylab = "Number of Claims", col = "blue")
+names(dat2)
 
-#Goals:
-#Which airport has the most claims
-#Which airline has the most claims
-#Graph showing number of claims over time (hypothesis that holidays will have a lot of claims)
-#KDEs for claim type, claim site, disposition
-#Regression trees
-#Prediction
+finalDat <- dat2[c(4:12)] #selecting relevant variables
+names(finalDat)
+
+barplot(table(finalDat$Airport.Code))
+barplot(table(finalDat$Claim.Type))
+barplot(table(finalDat$Item))
+
+#random forest
+#support vector machine
+
