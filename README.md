@@ -10,4 +10,10 @@ Progress:
 - Dataset has been removed of all rows containing NA values
 - Data frame containing only relevant variables has been created
 
+To-do:
+
+- Set categorical variables to dummy variables
+- Further clean dataset by removing airports that don't appear more than a certain amount
+- Random forest
+
 
