@@ -10,11 +10,11 @@ Progress:
 
 - Dataset has been removed of all rows containing NA values
 - Data frame containing only relevant variables has been created
+- Dataset has been cleaned to only include the airports listed in the top 100 linked above (has also been subset into top 25 and top 50 csv files)
 
 To-do:
 
 - Set categorical variables to dummy variables
-- Further clean dataset by removing airports that don't appear more than a certain amount
 - Random forest
 
 
