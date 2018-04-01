@@ -32,3 +32,17 @@ top25 <- read.csv("top25.csv")
 counts25 <- table(top25$Airport.Code)
 barplot(counts25, horiz=TRUE, las=1) #barplot of top 25 airports based on number of claims per airport in data
 
+### Random Forest ####
+forest <- read.csv("top50.csv")
+str(forest)
+
+set.seed(100)
+datasetSize <- floor(nrow(forest)/2)
+split <- sample(1:nrow(forest), size = datasetSize)
+training <- forest[split,] #training set
+validation <- forest[-split,] #testing set
+
+library(randomForest)
+rf_classifier = randomForest(Status ~ Airport.Name + Claim.Type + Claim.Site, data = forest, ntree = 100, mtry = 2, importance = TRUE)
+rf_classifier
+varImpPlot(rf_classifier)
