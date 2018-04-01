@@ -11,10 +11,14 @@ Progress:
 - Dataset has been removed of all rows containing NA values
 - Data frame containing only relevant variables has been created
 - Dataset has been cleaned to only include the airports listed in the top 100 linked above (has also been subset into top 25 and top 50 csv files)
+- Removed any row with status set to "canceled" or "pending response from claimant", as these two categories are not relevant
+- Split data into training and validation set
+- Performed initial random forest on training set, OOB estimate of 42%
 
 To-do:
 
-- Set categorical variables to dummy variables
-- Random forest
+- Test number of trees in a certain range to try and get a lower error rate
+- Predict on the validation set
+- Graph
 
 
