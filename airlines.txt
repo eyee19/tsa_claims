@@ -1,0 +1,158 @@
+				  Airline  Count Headquarters
+1                                Aer Lingus   44 Ireland
+2                           Aero California    2 Mexico
+3                                 Aero Flot    8 Russia
+4                               Aero Mexico   45 Mexico
+5            Aeroflot Russian International    2 Russia
+6                         Aerosvit Airlines    1 Ukraine
+7                        Aerosweet Airlines    2 Ukraine
+8                                Air Canada  309 Canada
+9                                 Air China   15 China
+10                               Air France  224 France
+11                                Air India   22 India
+12                         Air Inter Europe    1 France
+13                              Air Jamaica   52 Jamaica
+14                          Air New Zealand   30 New Zealand
+15                               Air Nippon    1 Japan
+16                              Air Pacific   10 Fiji
+17                          Air Phillipines    2 Philippines
+18                             Air Portugal    5 Portugal
+20                         AirTran Airlines  961 America
+21                          Alaska Airlines 1197 America
+22                                 Alitalia   49 Italy
+23                       All Nippon Airways    9 Japan
+24                            Allegiant Air  172 America
+25                           Aloha Airlines  183 America
+26                      Aloha Islandair Inc    4 America
+27                        America Trans Air  104 America
+28                             America West  500 America
+29                        American Airlines 6645 America
+30                         American Central    3 America
+31                           American Eagle  108 America
+32                            American West  141 America
+33                          Asiana Airlines   11 South Korea
+34                           ATA Aerocondor  179 Portugal
+35                        Austrian Airlines   24 Austria
+36                                  Avianca    7 Colombia
+37                          Bahama Airlines    2 Bahamas
+38                                 Brit Air   15 France
+39                          British Airways  259 United Kingdom
+40              British Midland Airways Ltd    1 United Kingdom
+41             British West Indies Airlines    5 Trinidad and Tobago
+42                        Cameroon Airlines    3 Cameroon
+43                                 Cape Air   10 America
+44                       Carribean Airlines    2 Trinidad and Tobago
+45                      Cathay Pacific - CX   42 China
+46                          Cayman Airlines    6 Cayman Islands
+47                        Champion Airlines   11 America
+48                           China Airlines   35 China
+49                   China Eastern Airlines   12 China
+50                  China Southern Airlines    1 China
+51  Civil Aviation - Non-Commercial Carrier    7 
+52                               Comair Inc   12 America
+53                       Commercial Airways    1 South Africa
+54                               Condor Air    1 Germany
+55                     Continental Airlines 5410 America
+56                  Continental Express Inc   45 America
+57                            Copa Airlines    3 Panama
+58                         Croatia Airlines    1 Croatia
+59                           Czech Airlines    8 Czech Republic
+60                    Czechoslavak Airlines    2 Czech Republic
+61                             Delta (Song)  235 America
+62                          Delta Air Lines 7303 America
+63                                Egypt Air    7 Egypt
+64                   EL AL Israeli Airlines   40 Israel
+65                                 Emirates    5 United Arab Emirates
+66                              Estonia Air    1 Estonia
+67                        Ethopian Airlines    1 Ethiopia
+68                                Eurowings    1 Germany
+69                             EVA airlines   24 Taiwan
+70                        Frontier Airlines  680 America
+71                    Frontier Aviation Inc    4 America
+72                                       Go   13 United Kingdom
+73                      Great Lakes Airline    1 America
+74                            Greyhound Air    1 Canada
+75                               Grupo TACA    1 El Salvador
+76                         Harmony Airlines    3 Canada
+77                        Hawaiian Airlines  421 America
+78                       Hooters Air (PACE)    3 America
+79                              Horizon Air   60 America 
+80                          Iberia Airlines   16 Spain
+81                              Iceland Air   16 Iceland
+82                         Independence Air  113 America
+83                          Indian Airlines    5 India
+84                               Island Air    9 America
+85                Island Airlines Nantucket    4 America
+86                           Japan Airlines   34 Japan
+87                              Jet Airways    4 India
+88                                 Jet Blue 2598 America
+89                       Jet Train Airlines    6 America
+90                 KLM Royal Dutch Airlines   69 Netherlands
+91                          Korean Airlines   50 South Korea
+92                          Kuwait Airlines    1 Kuwait
+93                           Kuwait Airways    2 Kuwait
+94                             Lan Airlines    9 Chile
+95                      LOT Polish Airlines   12 Poland
+96                                Lufthansa  255 Germany
+97                 Malaysian Airline System   19 Malaysia
+98                 Malev Hungarian Airlines    2 Hungary
+99                            Mesa Airlines    1 America
+100                                Mexicana   43 Mexico
+101                    Middle East Airlines    1 Lebanon
+102                         Midway Airlines    6 America
+103                Midwest Express Airlines  128 America
+104                    Monarch Airlines Ltd    1 United Kingdom
+105                           Mountain West    1 America
+106                 North American Airlines    9 America
+107                      Northwest Airlines 3208 America
+108     Northwest International Airways Ltd   16 America
+109                         Olympic Airways    7 Greece
+110                  OMNI Air Express- (OY)   21 America
+111                           Pace Airlines    2 America
+112          Pacific Southwest Airlines Inc    3 America
+113     Pakistan International Airlines Cor   15 Pakistan
+114              Pan American Airways Corp.    2 America
+115                     Philippine Airlines    1 Philippines
+116                         Polish Airlines    4 Poland
+117                          Qantus Airways  104 Australia
+118                          Qatar airlines    1 Qatar
+119                                Reno Air    1 America
+120                    Royal Dutch Airlines    5 Netherlands
+121                 Royal Jordanian Airline    4 Jordan
+122                    Royal Wings Airlines    1 Jordan
+123                                Ryan Air   15 Ireland
+124                  Saudi Arabian Airlines    7 Saudi Arabia
+125           Scandinavian Airlines Systems   38 Sweden
+126                               Silverjet    3 United Kingdom
+127                      Singapore Airlines   45 Singapore
+128                                  SkyBus    9 America
+129              Skywest Airlines Australia    2 America
+130                Skywest Airlines Inc USA   12 America
+131                                  SonAir    1 Angola
+132                   South African Airways   27 South Africa
+133                      Southeast Airlines    9 America
+134                      Southwest Airlines 4077 America
+135                         Spirit Airlines  573 America
+136                Sun Country Airlines Inc   44 America
+137     Sunworld International Airlines Inc    2 America
+138                               Swiss Air   31 Switzerland
+139                           TACA airlines    1 El Salvador
+140                            TAP Portugal    2 Portugal
+141                            Thai Airways    7 Thailand
+142                               Tower Air    1 America
+143                  Tran Meridian Airlines   23 America
+144                              Travelspan    2 Guyana
+145                        Turkish Airlines   14 Turkey
+146                                     TWA    2 America
+147                                     UAL 5172 America
+148                              US Express   35 America
+149                           USA 3000 (U5)   98 America
+150                                   USAir 3014 America
+151                             V Australia    3 Australia 
+152                             Vieques Air    1 Puerto Rico 
+153                          Virgin America   43 America
+154                         Virgin Atlantic  259 United Kingdom
+155                          Virgin Express   10 Belgium
+156    Western Pacific Airlines Inc Westpac    2 America  
+157                    Westjet Airlines Ltd   46 Canada
+158                         Wiggins Airways    1 America
