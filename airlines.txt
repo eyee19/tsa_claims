@@ -4,8 +4,6 @@
 3                                 Aero Flot    8 Russia
 4                               Aero Mexico   45 Mexico
 5            Aeroflot Russian International    2 Russia
-6                         Aerosvit Airlines    1 Ukraine
-7                        Aerosweet Airlines    2 Ukraine
 8                                Air Canada  309 Canada
 9                                 Air China   15 China
 10                               Air France  224 France
@@ -34,16 +32,11 @@
 34                           ATA Aerocondor  179 Portugal
 35                        Austrian Airlines   24 Austria
 36                                  Avianca    7 Colombia
-37                          Bahama Airlines    2 Bahamas
 38                                 Brit Air   15 France
 39                          British Airways  259 United Kingdom
 40              British Midland Airways Ltd    1 United Kingdom
-41             British West Indies Airlines    5 Trinidad and Tobago
-42                        Cameroon Airlines    3 Cameroon
 43                                 Cape Air   10 America
-44                       Carribean Airlines    2 Trinidad and Tobago
 45                      Cathay Pacific - CX   42 China
-46                          Cayman Airlines    6 Cayman Islands
 47                        Champion Airlines   11 America
 48                           China Airlines   35 China
 49                   China Eastern Airlines   12 China
@@ -55,16 +48,11 @@
 55                     Continental Airlines 5410 America
 56                  Continental Express Inc   45 America
 57                            Copa Airlines    3 Panama
-58                         Croatia Airlines    1 Croatia
-59                           Czech Airlines    8 Czech Republic
-60                    Czechoslavak Airlines    2 Czech Republic
 61                             Delta (Song)  235 America
 62                          Delta Air Lines 7303 America
 63                                Egypt Air    7 Egypt
 64                   EL AL Israeli Airlines   40 Israel
 65                                 Emirates    5 United Arab Emirates
-66                              Estonia Air    1 Estonia
-67                        Ethopian Airlines    1 Ethiopia
 68                                Eurowings    1 Germany
 69                             EVA airlines   24 Taiwan
 70                        Frontier Airlines  680 America
@@ -89,16 +77,12 @@
 89                       Jet Train Airlines    6 America
 90                 KLM Royal Dutch Airlines   69 Netherlands
 91                          Korean Airlines   50 South Korea
-92                          Kuwait Airlines    1 Kuwait
-93                           Kuwait Airways    2 Kuwait
 94                             Lan Airlines    9 Chile
 95                      LOT Polish Airlines   12 Poland
 96                                Lufthansa  255 Germany
 97                 Malaysian Airline System   19 Malaysia
-98                 Malev Hungarian Airlines    2 Hungary
 99                            Mesa Airlines    1 America
 100                                Mexicana   43 Mexico
-101                    Middle East Airlines    1 Lebanon
 102                         Midway Airlines    6 America
 103                Midwest Express Airlines  128 America
 104                    Monarch Airlines Ltd    1 United Kingdom
@@ -106,7 +90,6 @@
 106                 North American Airlines    9 America
 107                      Northwest Airlines 3208 America
 108     Northwest International Airways Ltd   16 America
-109                         Olympic Airways    7 Greece
 110                  OMNI Air Express- (OY)   21 America
 111                           Pace Airlines    2 America
 112          Pacific Southwest Airlines Inc    3 America
@@ -115,11 +98,8 @@
 115                     Philippine Airlines    1 Philippines
 116                         Polish Airlines    4 Poland
 117                          Qantus Airways  104 Australia
-118                          Qatar airlines    1 Qatar
 119                                Reno Air    1 America
 120                    Royal Dutch Airlines    5 Netherlands
-121                 Royal Jordanian Airline    4 Jordan
-122                    Royal Wings Airlines    1 Jordan
 123                                Ryan Air   15 Ireland
 124                  Saudi Arabian Airlines    7 Saudi Arabia
 125           Scandinavian Airlines Systems   38 Sweden
@@ -141,7 +121,6 @@
 141                            Thai Airways    7 Thailand
 142                               Tower Air    1 America
 143                  Tran Meridian Airlines   23 America
-144                              Travelspan    2 Guyana
 145                        Turkish Airlines   14 Turkey
 146                                     TWA    2 America
 147                                     UAL 5172 America
