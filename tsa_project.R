@@ -35,6 +35,7 @@ barplot(counts25, horiz=TRUE, las=1) #barplot of top 25 airports based on number
 ### Random Forest ####
 forest <- read.csv("top50.csv")
 str(forest)
+as.data.frame(table(forest$Airline.Name))
 
 set.seed(100)
 datasetSize <- floor(nrow(forest)/2)
@@ -43,6 +44,8 @@ training <- forest[split,] #training set
 validation <- forest[-split,] #testing set
 
 library(randomForest)
-rf_classifier = randomForest(Status ~ Airport.Name + Claim.Type + Claim.Site, data = forest, ntree = 100, mtry = 2, importance = TRUE)
+rf_classifier = randomForest(Status ~ Airport.Name + Claim.Type + Claim.Site + Airport.Name, data = forest, ntree = 500, mtry = 2, importance = TRUE)
+#100 Trees 42.01% OOB
+#500 Trees 42.03%
 rf_classifier
 varImpPlot(rf_classifier)
