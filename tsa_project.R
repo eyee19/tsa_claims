@@ -49,3 +49,8 @@ rf_classifier = randomForest(Status ~ Airport.Name + Claim.Type + Claim.Site + A
 #500 Trees 42.03%
 rf_classifier
 varImpPlot(rf_classifier)
+
+### Graphs/Plots ###
+library(ggplot2)
+
+ggplot(forest, aes(Status)) + geom_bar(stat = "count", fill = "red", width = 0.5) #Status histogram
