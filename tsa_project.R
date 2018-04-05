@@ -35,6 +35,7 @@ barplot(counts25, horiz=TRUE, las=1) #barplot of top 25 airports based on number
 ### Random Forest ####
 forest <- read.csv("top50.csv")
 str(forest)
+names(forest)
 as.data.frame(table(forest$Airline.Name))
 
 set.seed(100)
@@ -54,3 +55,12 @@ varImpPlot(rf_classifier)
 library(ggplot2)
 
 ggplot(forest, aes(Status)) + geom_bar(stat = "count", fill = "red", width = 0.5) #Status histogram
+
+g <- ggplot(forest, aes(Airport.Code))
+g + geom_bar(aes(fill=Status), width = 0.5) + 
+  theme(axis.text.x = element_text(angle=65, vjust=0.6)) + 
+  labs(title="Histogram on Claims per Airport", 
+       subtitle="Airport Code Across Claim Status",
+       x="IATA Airport Code", y="Claim Count")
+
+ggsave("histClaimCode.png", width = 10, height = 5)
