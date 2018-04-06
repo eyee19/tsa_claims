@@ -44,17 +44,32 @@ split <- sample(1:nrow(forest), size = datasetSize)
 training <- forest[split,] #training set
 validation <- forest[-split,] #testing set
 
+### Training ###
 library(randomForest)
-rf_classifier = randomForest(Status ~ Airport.Name + Claim.Type + Claim.Site + Airport.Name, data = forest, ntree = 500, mtry = 2, importance = TRUE)
-#100 Trees 42.01% OOB
-#500 Trees 42.03%
+rf_classifier = randomForest(Status ~ Airport.Name + Claim.Type + Claim.Site + 
+                               Airline.Name + Claim.Amount, data = training, ntree = 500, importance = TRUE)
+#100 Tree 40.44% OOB
+#200 40.36%
+#300 40.31%
+#400 40.01%
+#500 39.77%
 rf_classifier
 varImpPlot(rf_classifier)
+table(training$Status)
+
+### Testing ###
+prediction <- predict(rf_classifier, validation)
+table(prediction)
+
+rf_classifier_test = randomForest(Status ~ Airport.Name + Claim.Type + Claim.Site + 
+                               Airline.Name + Claim.Amount, data = validation, ntree = 500, importance = TRUE)
+rf_classifier_test #39.73% OOB, sliiiiightly better 
+varImpPlot(rf_classifier_test)
 
 ### Graphs/Plots ###
 library(ggplot2)
-
-ggplot(forest, aes(Status)) + geom_bar(stat = "count", fill = "red", width = 0.5) #Status histogram
+#Status histogram
+ggplot(forest, aes(Status)) + geom_bar(stat = "count", fill = "red", width = 0.5) 
 
 g <- ggplot(forest, aes(Airport.Code))
 g + geom_bar(aes(fill=Status), width = 0.5) + 
@@ -64,3 +79,25 @@ g + geom_bar(aes(fill=Status), width = 0.5) +
        x="IATA Airport Code", y="Claim Count")
 
 ggsave("histClaimCode.png", width = 10, height = 5)
+
+#Pie chart of status
+table(forest$Status)
+pie <- ggplot(forest, aes(x = "", fill = factor(Status))) + 
+  geom_bar(width = 1) +
+  theme(axis.line = element_blank(), 
+        plot.title = element_text(hjust=0.5)) + 
+  labs(fill="Status", 
+       x=NULL, 
+       y=NULL, 
+       title="Pie Chart of Status", 
+       caption="Source: TSA")
+
+pie + coord_polar(theta = "y", start=0)
+ggsave("pie.png", width = 5, height = 5)
+
+#
+
+
+
+
+
