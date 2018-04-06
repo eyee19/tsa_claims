@@ -4,7 +4,7 @@
 TSA Claims analysis project. End goal of this project is to be able to predict whether or not a claim will be accepted, denied, or settled based on certain factors.
 
 - Dataset from [here](https://www.kaggle.com/sreejay222/tsa-claim/data)
-- Dataset is from 2002-2015, project will look at the [top 100 U.S. airports from 2016](http://www.fi-aeroweb.com/Top-100-US-Airports.html#PAX)
+- Dataset is from 2002-2015, project will look at the [top 50 U.S. airports from 2016](http://www.fi-aeroweb.com/Top-100-US-Airports.html#PAX)
 
 Progress:
 
@@ -14,11 +14,11 @@ Progress:
 - Removed any row with status set to "canceled" or "pending response from claimant", as these two categories are not relevant
 - Split data into training and validation set
 - Performed initial random forest on training set, OOB estimate of 42%
+- Tested a range of ntree (100, 200, 300, 400, 500)
+- Performed random forest on validation set
 
 To-do:
 
-- Test number of trees in a certain range to try and get a lower error rate
-- Predict on the validation set
-- Graph
+- Visualizations
 
 
