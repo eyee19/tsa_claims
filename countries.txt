@@ -1,0 +1,47 @@
+                                      Var1  Freq
+1                                  America 43451
+2                                   Angola     1
+3                                Australia   107
+4                                  Austria    24
+5                                  Belgium    10
+6                                   Canada   359
+7                                    Chile     9
+8                                    China   105
+9  Civil Aviation - Non-Commercial Carrier     7
+10                                Colombia     7
+11                                   Egypt     7
+12                             El Salvador     2
+13                                    Fiji    10
+14                                  France   240
+15                                 Germany   257
+16                                 Iceland    16
+17                                   India    31
+18                                 Ireland    59
+19                                  Israel    40
+20                                   Italy    49
+21                                 Jamaica    52
+22                                   Japan    44
+23                                Malaysia    19
+24                                  Mexico    90
+25                             Netherlands    74
+26                             New Zealand    30
+27                           North America     9
+28                                Pakistan    15
+29                                  Panama     3
+30                             Philippines     3
+31                                  Poland    16
+32                                Portugal   186
+33                             Puerto Rico     1
+34                                  Russia    10
+35                            Saudi Arabia     7
+36                               Singapore    45
+37                            South Africa    28
+38                             South Korea    61
+39                                   Spain    16
+40                                  Sweden    38
+41                             Switzerland    31
+42                                  Taiwan    24
+43                                Thailand     7
+44                                  Turkey    14
+45                    United Arab Emirates     5
+46                          United Kingdom   536
