@@ -95,8 +95,42 @@ pie <- ggplot(forest, aes(x = "", fill = factor(Status))) +
 pie + coord_polar(theta = "y", start=0)
 ggsave("pie.png", width = 5, height = 5)
 
-#
+#World map
+as.data.frame(table(forest$Airline.Name))
+library(dplyr)
 
+WorldData <- map_data('world')
+WorldData %>% filter(region != "Antarctica") -> WorldData
+WorldData <- fortify(WorldData)
+
+df <- data.frame(region=c('Angola','Australia','Austria','Belgium','Canada','Chile','China','Colombia','Egypt',
+                          'El Salvador','Fiji','France','Germany','Iceland','India','Ireland','Israel','Italy',
+                          'Jamaica','Japan','Malaysia','Mexico','Netherlands','New Zealand','Pakistan','Panama',
+                          'Philippines','Poland','Portugal','Russia','Saudi Arabia','Singapore','South Africa',
+                          'South Korea','Spain','Sweden','Switzerland','Taiwan','Thailand','Turkey','UAE','United Kingdom'), 
+                 value=c(1,107,24,10,359,9,105,7,7,2,10,240,257,16,31,59,40,49,52,44,19,90,74,30,15,3,3,16,186,
+                         10,7,45,28,61,16,38,31,24,7,14,5,536), 
+                 stringsAsFactors=FALSE)
+
+p <- ggplot()
+p <- p + geom_map(data=WorldData, map=WorldData,
+                  aes(x=long, y=lat, group=group, map_id=region),
+                  fill="white", colour="#7f7f7f", size=0.5)
+p <- p + geom_map(data=df, map=WorldData,
+                  aes(fill=value, map_id=region),
+                  colour="#7f7f7f", size=0.5)
+p <- p + coord_map("rectangular", lat0=0, xlim=c(-180,180), ylim=c(-60, 90))
+p <- p + scale_fill_continuous(low="thistle2", high="darkred", 
+                               guide="colorbar")
+p <- p + scale_y_continuous(breaks=c())
+p <- p + scale_x_continuous(breaks=c())
+p <- p + labs(fill="legend", title="Claims per Airline by Country (-USA)", x="", y="")
+p <- p + theme_bw()
+p <- p + theme(panel.border = element_blank())
+p 
+ggsave("worldwithoutUSA.png", width = 10, height = 5)
+
+#
 
 
 
