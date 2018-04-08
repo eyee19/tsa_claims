@@ -130,8 +130,39 @@ p <- p + theme(panel.border = element_blank())
 p 
 ggsave("worldwithoutUSA.png", width = 10, height = 5)
 
-#
+#Bar chart for claim type
+freqtable <- table(forest$Claim.Type)
+df <- as.data.frame.table(freqtable)
+head(df)
+#1  Employee Loss (MPCECA)   146 Military Personnel and Civilian Employees' Claims Act of 1964
+#2           Motor Vehicle     2
+#3 Passenger Property Loss 29683
+#4         Passenger Theft   168
+#5         Personal Injury   108
+#6         Property Damage 16048
+# Plot
+g <- ggplot(df, aes(Var1, Freq))
+g + geom_bar(stat="identity", width = 0.5, fill="tomato2") + 
+  labs(title="Bar Chart", 
+       subtitle="Claim Type", x="Claim Type", y="Frequency") +
+  theme(axis.text.x = element_text(angle=65, vjust=0.6))
 
+ggsave("claimtype.png", width = 10, height = 5)
 
+#Bar chart for claim site
+freqtable <- table(forest$Claim.Site)
+df <- as.data.frame.table(freqtable)
+head(df)
+#1 Checked Baggage 38802
+#2      Checkpoint  7208
+#3   Motor Vehicle     1
+#4           Other   144
+# Plot
+g <- ggplot(df, aes(Var1, Freq))
+g + geom_bar(stat="identity", width = 0.5, fill="tomato2") + 
+  labs(title="Bar Chart", 
+       subtitle="Claim Site", x="Claim Site", y="Frequency") +
+  theme(axis.text.x = element_text(angle=65, vjust=0.6))
 
+ggsave("claimsite.png", width = 10, height = 5)
 
