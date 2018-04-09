@@ -16,9 +16,8 @@ Progress:
 - Performed initial random forest on training set, OOB estimate of 42%
 - Tested a range of ntree (100, 200, 300, 400, 500)
 - Performed random forest on validation set
-
-To-do:
-
 - Visualizations
+
+
 
 
