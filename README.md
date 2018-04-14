@@ -6,7 +6,7 @@ TSA Claims analysis project. End goal of this project is to be able to predict w
 - Dataset from [here](https://www.kaggle.com/sreejay222/tsa-claim/data)
 - Dataset is from 2002-2015, project will look at the [top 50 U.S. airports from 2016](http://www.fi-aeroweb.com/Top-100-US-Airports.html#PAX)
 
-Process of the project:
+#### Project Steps:
 
 - Dataset has been removed of all rows containing NA values
 - Data frame containing only relevant variables has been created
