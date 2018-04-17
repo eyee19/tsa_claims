@@ -1,5 +1,7 @@
 # TSA Claims Project
 
+### Read about the project [here!](https://medium.com/@eyee19/week-15-c1cc96b30261)
+
 #### Introduction
 TSA Claims analysis project. End goal of this project is to be able to predict whether or not a claim will be accepted, denied, or settled based on certain factors (data will also be visualized using ggplot2). This project is more of a learning opportunity, so end results may not be what I expected. 
 
